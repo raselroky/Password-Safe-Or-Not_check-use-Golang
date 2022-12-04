@@ -29,7 +29,7 @@ func ConnectDB() (Db *gorm.DB) {
 	} else {
 		fmt.Println("Successfully created connection to database")
 	}
-	Db.AutoMigrate(&entity.Search{})
-	
+	Db.AutoMigrate(&entity.Passwords{})
+
 	return Db
 }
