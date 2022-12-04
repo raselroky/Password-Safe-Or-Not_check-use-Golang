@@ -8,7 +8,7 @@ import (
 func main() {
 	r := gin.Default()
 
-	r.POST("/register", controller.PasswordController)
+	r.POST("/search", controller.Search_Sentence)
 	//r.POST("/login", controller.LoginController)
 	r.Run(":5000")
 }
