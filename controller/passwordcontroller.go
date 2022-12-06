@@ -28,7 +28,7 @@ func Password_Check(c *gin.Context) {
 		fmt.Println(er)
 	}
 	password := pass.Password
-	if len(password) > 6 {
+	if len(password) > 7 {
 		if Check_Character(password) {
 			if Check_Number(password) {
 				if Check_Special(password) {
